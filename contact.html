@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - LinkedChain Analytics</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav aria-label="Hauptnavigation">
+        <div class="logo">LinkedChain</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Über uns</a>
+            <a href="license.html">Lizenzen</a>
+            <a href="contact.html" aria-current="page">Kontakt</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Kontaktieren Sie uns</h1>
+        <p>Haben Sie Fragen zu unseren Supply-Chain-Lösungen? Wir helfen gerne weiter.</p>
+
+        <section class="card">
+            <form onsubmit="alert('Danke! Dies ist nur ein Mockup. Es wurden keine Daten gesendet.'); return false;">
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; margin-bottom: 5px; font-weight: bold;">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">E-Mail-Adresse:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold;">Nachricht:</label>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Ich habe die <a href="privacy.html">Datenschutzerklärung</a> gelesen und stimme zu.</label>
+                </div>
+
+                <button type="submit" class="btn">Nachricht senden</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Standort</h2>
+            <p>
+                <strong>LinkedChain Analytics GmbH</strong> (fiktiv)<br>
+                Softwarepark 1<br>
+                1040 Wien<br>
+                Österreich
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LinkedChain Analytics GmbH (fiktiv)</p>
+        <p>
+            <a href="impressum.html">Impressum</a> | 
+            <a href="privacy.html">Datenschutz</a> | 
+            <a href="accessibility.html">Barrierefreiheit</a>
+        </p>
+    </footer>
+
+</body>
+</html>
