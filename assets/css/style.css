@@ -48,3 +48,85 @@ nav {
 .nav-links a:hover {
     color: var(--primary);
 }
+
+/* Barrierefreiheit: Fokus muss sichtbar sein! (WCAG) */
+a:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* --- Hero Section (Startbereich) --- */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 50px; /* Pillen-Form */
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Button hebt sich leicht */
+}
+
+/* --- Container für Inhalt --- */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Karten-Design für Features */
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--primary); /* Design-Akzent */
+}
+
+h2 {
+    color: var(--primary-dark);
+    margin-top: 0;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--white);
+    margin: 0 10px;
+}
